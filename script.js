@@ -117,3 +117,50 @@ const date = new Date();
 // console.log(Object.values(obj1));
 // console.log(Object.entries(obj1));
 // console.log(obj1.hasOwnProperty(8)); // check if key exits in object
+
+// *******functions
+
+// function name() {
+//   console.log("hello");
+//   console.log("hello");
+//   console.log("hello");
+//   console.log("hello");
+//   console.log("hello");
+//   console.log("hello");
+//   console.log("hello");
+//   console.log("hello");
+//   console.log("hello");
+// }
+// name();
+
+// function addNums(num1, num2) {
+//   return num1 + num2;
+// }
+// const result = addNums(1, 4);
+// // console.log(addNums(1, 3));
+// console.log(result);
+
+// function user(username = "Sharjeel") {
+//   return username + " logged in";
+// }
+// console.log(user("Ajaz"));
+
+// function restOperator(...num) {
+//   return num;
+// }
+
+// console.log(restOperator(1, 3, 485, 746, 54, 34, 3));
+
+// *****hositing
+
+// addone(5);
+// function addone(num) {
+//   console.log(num + 1);
+// }
+
+// if function is decleared in variable it can not be accesd before intilization
+// const num2 = (num) => console.log(num + 2);
+
+// num2(5);
+
+(() => console.log("hello world"))();

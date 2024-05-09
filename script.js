@@ -53,3 +53,43 @@ const date = new Date();
 //   day: "2-digit",
 // });
 // console.log(dateobj);
+
+// *******Array
+// const arr = [1, 2, 3, 4, 5, 6];
+
+// const arr2 = [...arr];
+
+// arr2.push(22);
+// arr2.unshift(5);
+// console.log(arr2);
+
+// console.log(arr2.slice(1, 3));
+// console.log(arr2.splice(1, 3)); //changes orignal array
+
+// console.log(arr);
+// console.log(arr2);
+// console.log(arr2.join()); //converts it to string
+// const a = arr.forEach((arr) => {
+//   if (arr > 2) {
+//     console.log(arr);
+//   }
+// });
+
+// const city = ["karachi", "lahore", "rawalpindi"];
+// const provision = ["sindh", "punjab", "balochistan,"];
+
+// const merge = [...city, ...provision];
+// const concat = city.concat(provision);
+
+// console.log(concat);
+
+// const arrays = [1, 2, [1, 2], [1, 4, 5], 34, 45];
+// console.log(arrays.flat(Infinity));
+
+// console.log(Array.from("herry")); //converts from string singel value
+
+const a = 100;
+const b = 220;
+const c = 300;
+
+console.log(Array.of(a, b, c)); //converts many item in one array creates new array

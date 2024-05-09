@@ -88,8 +88,32 @@ const date = new Date();
 
 // console.log(Array.from("herry")); //converts from string singel value
 
-const a = 100;
-const b = 220;
-const c = 300;
+// const a = 100;
+// const b = 220;
+// const c = 300;
+// console.log(Array.of(a, b, c)); //converts many item in one array creates new array
 
-console.log(Array.of(a, b, c)); //converts many item in one array creates new array
+// ********object methods
+// const mySymbol = Symbol("hery");
+// const obj = {
+//   name: "sharjeel",
+//   [Symbol]: "herry",
+//   greeting: function () {
+//     console.log(`${this.name}`);
+//   },
+// };
+
+// obj.name = "herry";
+// console.log(obj.greeting());
+
+// const obj1 = { 1: "a", 2: "b" };
+// const obj2 = { 3: "c", 4: "d" };
+
+// const obj3 = Object.assign({}, obj1, obj2);
+
+// console.log(obj3);
+
+// console.log(Object.keys(obj1));
+// console.log(Object.values(obj1));
+// console.log(Object.entries(obj1));
+// console.log(obj1.hasOwnProperty(8)); // check if key exits in object

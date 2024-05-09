@@ -25,3 +25,11 @@
 // console.log(num2.toPrecision(4));
 // const hundreds = 10000000;
 // console.log(hundreds.toLocaleString("en-PK"));
+
+// ********Maths
+const a = [1, 2, 3, 4, 5];
+const nums = 12345.4654;
+console.log(Math.round(nums));
+console.log(Math.max(1, 2, 3, 4));
+console.log(Math.min(1, 2, 3, 4));
+console.log(Math.round(Math.random() * a.length) + 1);

@@ -163,4 +163,34 @@ const date = new Date();
 
 // num2(5);
 
-(() => console.log("hello world"))();
+// (() => console.log("hello world"))();
+
+// ****this keyword
+// const thisKeyword = {
+//   name: "sharjeel",
+//   thisUse: function () {
+//     console.log(this.name);
+//     console.log(this);
+//   },
+// };
+// console.log(thisKeyword.thisUse());
+// thisKeyword.name = "Ajaz";
+// console.log(thisKeyword.name);
+
+// const namess = function () {
+//   console.log(this);
+// };
+
+// namess();
+
+// const t = () => {
+//   console.log(this);
+// };
+// t();
+
+// IIFE
+
+(() => console.log("hello"))();
+(function herry() {
+  console.log("herry");
+})();

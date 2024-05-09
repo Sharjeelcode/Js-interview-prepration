@@ -27,9 +27,29 @@
 // console.log(hundreds.toLocaleString("en-PK"));
 
 // ********Maths
-const a = [1, 2, 3, 4, 5];
-const nums = 12345.4654;
-console.log(Math.round(nums));
-console.log(Math.max(1, 2, 3, 4));
-console.log(Math.min(1, 2, 3, 4));
-console.log(Math.round(Math.random() * a.length) + 1);
+// const a = [1, 2, 3, 4, 5];
+// const nums = 12345.4654;
+// console.log(Math.round(nums));
+// console.log(Math.max(1, 2, 3, 4));
+// console.log(Math.min(1, 2, 3, 4));
+// console.log(Math.round(Math.random() * a.length) + 1);
+
+// *****Date
+
+const date = new Date();
+// console.log(date.toDateString());
+// console.log(date.toLocaleDateString());
+// console.log(date.toDateString());
+// console.log(date.toISOString());
+
+// const dateobj = new Date("01-15-2024");
+// console.log(dateobj.toLocaleString());
+
+// console.log(date.getTime());
+
+// const newDate = new Date();
+// const dateobj = newDate.toLocaleString("default", {
+//   hour: "2-digit",
+//   day: "2-digit",
+// });
+// console.log(dateobj);

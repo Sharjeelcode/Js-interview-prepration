@@ -19,3 +19,9 @@
 // console.log(Array(string));
 
 // ****number methods
+// const num = new Number(22.0);
+// console.log(num.toFixed());
+// const num2 = 2121.92;
+// console.log(num2.toPrecision(4));
+// const hundreds = 10000000;
+// console.log(hundreds.toLocaleString("en-PK"));

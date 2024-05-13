@@ -36,7 +36,7 @@
 
 // *****Date
 
-const date = new Date();
+// const date = new Date();
 // console.log(date.toDateString());
 // console.log(date.toLocaleDateString());
 // console.log(date.toDateString());
@@ -190,7 +190,71 @@ const date = new Date();
 
 // IIFE
 
-(() => console.log("hello"))();
-(function herry() {
-  console.log("herry");
-})();
+// (() => console.log("hello"))();
+// (function herry() {
+//   console.log("herry");
+// })();
+
+//js exicution
+// 1.global exicution phase
+// 2.functional exicution phase
+// 3.memory creation phase
+// global exicution phase ma sary veriable define hongy or unke values honge undefined but functions ke refinations tore hoge
+// function ka ek new exicution context banyga or us ma function ke values jyge or wo return jynge wapis exicution context ma
+
+// jo golbal or functional exeution uper defined ha whe memory creation phase ma hota ha
+
+// example of exicution phase
+
+// const f1 = () => console.log("f1");
+// const f2 = () => console.log("f2");
+// const f3 = () => console.log("f3");
+// f1();
+// f2();
+// f2();
+// function name(params) {}
+
+// switch case
+
+// const month = 25;
+
+// switch (month) {
+//   case 1:
+//     console.log("1");
+//     break;
+//   case 2:
+//     console.log("2");
+//     break;
+//   default:
+//     console.log("not");
+//     break;
+// }
+
+// while loop
+
+// let d = 0;
+// while (d < 5) {
+//   d = d + 1;
+//   console.log(d);
+// }
+// console.log(d);
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// while (array.length) {
+//   array.pop();
+//   console.log(array);
+// }
+
+let star = "****************************************";
+let starArray = Array.from(star);
+
+// while (starArray.length) {
+//   console.log(starArray.join(""));
+//   starArray.pop();
+// }
+
+// do {
+//   console.log(starArray.join(""));
+//   starArray.pop();
+// } while (starArray.length);

@@ -328,18 +328,49 @@ function deepCopy(obj) {
 // console.log(original); // Output: New York
 // console.log(deepCopyObj.address.city); // Output: Los Angeles
 
-const obj = {
-  name: "hello",
-  obj2: {
-    name2: "herry",
-  },
-};
+// const obj = {
+//   name: "hello",
+//   obj2: {
+//     name2: "herry",
+//   },
+// };
 
-function deepCopy(object) {
-  return JSON.parse(JSON.stringify(object));
-}
+// function deepCopy(object) {
+//   return JSON.parse(JSON.stringify(object));
+// }
 
-const deep = deepCopy(obj);
-deep.obj2.name2 = "baby";
-console.log(obj);
-console.log(deep);
+// const deep = deepCopy(obj);
+// deep.obj2.name2 = "baby";
+// console.log(obj);
+// console.log(deep);
+// console.log(a);
+
+// var a = 5;
+
+// function f() {
+//   console.log(this.name);
+// }
+// f.call({ name: "heyy" });
+// let i = "a";
+// console.log(NaN === i);
+
+// const original = {
+//   name: "John",
+//   age: 30,
+//   address: {
+//     city: "New York",
+//     country: "USA",
+//   },
+// };
+
+// Object.defineProperties(original, {
+//   name: {
+//     value: original.name,
+//     writable: false,
+//     configurable: false,
+//   },
+// });
+
+// original.name = "baby";
+
+// console.log(original);

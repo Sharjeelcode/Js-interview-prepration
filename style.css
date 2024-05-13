@@ -1,0 +1,20 @@
+.h1:hover {
+    animation: bounce 2s; /* Assuming you have defined the 'bounce' animation elsewhere */
+}
+
+.box {
+    width: max-content;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: move 18s linear infinite; /* Combined animation for moving right and left */
+}
+
+@keyframes move {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 200px);
+    }
+}

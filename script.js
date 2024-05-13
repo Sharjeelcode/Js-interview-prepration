@@ -246,8 +246,8 @@
 //   console.log(array);
 // }
 
-let star = "****************************************";
-let starArray = Array.from(star);
+// let star = "****************************************";
+// let starArray = Array.from(star);
 
 // while (starArray.length) {
 //   console.log(starArray.join(""));
@@ -258,3 +258,88 @@ let starArray = Array.from(star);
 //   console.log(starArray.join(""));
 //   starArray.pop();
 // } while (starArray.length);
+
+// const starLenght = 10;
+// let star = "*";
+// for (let i = 0; i < starLenght; i++) {
+//   console.log(star);
+//   star = star + "*";
+// }
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// for (const num of array) {
+//   console.log(num);
+// }
+
+// const greeting = "hello world";
+
+// for (const greet of greeting) {
+//   if (greet === " ") {
+//     break;
+//   } else {
+//     console.log(greet);
+//   }
+// }
+
+// const obj = {
+//   name: "ali",
+// };
+
+// const b = Object.assign({}, obj);
+// const c = { ...obj };
+// b.name = "baby";
+// console.log(b);
+// console.log(obj);
+// console.log(c);
+
+// const original = {
+//   name: "John",
+//   age: 30,
+//   address: {
+//     city: "New York",
+//     country: "USA",
+//   },
+// };
+
+// const shallowCopy = Object.assign({}, original);
+// shallowCopy.address.city = "Los Angeles";
+// shallowCopy.name = "herry";
+// console.log(original);
+// console.log(shallowCopy);
+
+function deepCopy(obj) {
+  return JSON.parse(JSON.stringify(obj));
+}
+
+// Example usage:
+// const original = {
+//   name: "John",
+//   age: 30,
+//   address: {
+//     city: "New York",
+//     country: "USA",
+//   },
+// };
+
+// const deepCopyObj = deepCopy(original);
+// deepCopyObj.address.city = "Los Angeles";
+
+// console.log(original); // Output: New York
+// console.log(deepCopyObj.address.city); // Output: Los Angeles
+
+const obj = {
+  name: "hello",
+  obj2: {
+    name2: "herry",
+  },
+};
+
+function deepCopy(object) {
+  return JSON.parse(JSON.stringify(object));
+}
+
+const deep = deepCopy(obj);
+deep.obj2.name2 = "baby";
+console.log(obj);
+console.log(deep);

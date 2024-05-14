@@ -374,3 +374,107 @@ function deepCopy(obj) {
 // original.name = "baby";
 
 // console.log(original);
+
+// const arr = [1, 2, 3, 4, 5, 6];
+
+// const map = arr.map((arr) => {
+//   return arr;
+// });
+// console.log(map);
+// const z = arr.filter((a) => a > 5);
+// console.log(z);
+
+// const obj = {
+//   name: "hery",
+// };
+
+// for (const key in obj) {
+//   console.log(key + obj[key]);
+// }
+
+const prices = [100, 200, 300];
+
+// const reducer = prices.reduce((acc, curVal) => acc + curVal, 0);
+const index = 100;
+// // console.log(reducer);
+// const remove = prices.indexOf(index);
+
+// const slice = prices.slice(remove, 2);
+// const splice = prices.splice(remove, 1);
+// console.log(p);
+// console.log(splice);
+// console.log(prices);
+
+// const reduce = prices.reduce((acc, curVal) => acc + curVal, 0);
+// console.log(reduce);
+
+const course = [
+  {
+    course: "js",
+    price: 1000,
+  },
+  {
+    course: "py",
+    price: 1000,
+  },
+  {
+    course: "c++",
+    price: 1000,
+  },
+  {
+    course: "java",
+    price: 1000,
+  },
+];
+
+const total = course.reduce((acc, currVal) => acc + currVal.price, 0);
+// console.log(total);
+
+const object = {
+  id: 112,
+  name: "herry",
+  nested: {
+    fname: "aziz",
+  },
+};
+
+// const shallowcopy = { ...object };
+// shallowcopy.name = "baby";
+// shallowcopy.nested.fname = "hi";
+
+// console.log(shallowcopy);
+// console.log(object);
+
+// const deepcopy = (obj) => {
+//   return JSON.parse(JSON.stringify(obj));
+// };
+
+// const deep = deepCopy(object);
+// deep.nested.fname = "fuck";
+
+// console.log(deep);
+// console.log(object);
+
+// const arr = [100, 200, 300, 400, 500, 600];
+
+// const totalAmout = arr.reduce((acc, currVal) => acc + currVal, 0);
+// console.log(totalAmout);
+
+const arr = [1, 2, 3, 4, 5];
+
+// const slice = arr.slice(1, 3);
+// console.log(slice);
+// // console.log(arr);
+
+// const splice = arr.splice(1, 3);
+// console.log(splice);
+// console.log(arr);
+
+const map = arr.map((arr) => {
+  if (arr > 2) {
+    return "hello";
+  }
+});
+const filter = arr.filter((arr) => arr > 2);
+console.log(map);
+console.log(filter);

@@ -476,5 +476,15 @@ const map = arr.map((arr) => {
   }
 });
 const filter = arr.filter((arr) => arr > 2);
-console.log(map);
-console.log(filter);
+// console.log(map);
+// console.log(filter);
+
+const h1 = (document.getElementById("h1").innerHTML = "baby");
+
+const p = document.querySelectorAll("p");
+const pArray = Array.from(p);
+
+const i = pArray.map((p) => {
+  p.style.backgroundColor = "red";
+});
+console.log(i);

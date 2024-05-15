@@ -482,9 +482,46 @@ const filter = arr.filter((arr) => arr > 2);
 const h1 = (document.getElementById("h1").innerHTML = "baby");
 
 const p = document.querySelectorAll("p");
-const pArray = Array.from(p);
+// const pArray = Array.from(p);
 
-const i = pArray.map((p) => {
-  p.style.backgroundColor = "red";
-});
-console.log(i);
+// const i = pArray.map((p) => {
+//   p.style.backgroundColor = "red";
+
+// });
+// console.log(i);
+
+// console.log(p);
+
+// const h2 = document.getElementsByClassName("h2");
+// console.log(h2);
+
+// const arrs = ["c", "a", "b"];
+
+// arrs.sort();
+// const str = arrs.join("");
+// console.log(str);
+// console.log(arrs);
+
+// const element = document.createElement("ul");
+
+// arrs.forEach((a) => {
+//   const li = document.createElement("li");
+//   li.innerText = a;
+//   element.appendChild(li);
+//   h2[0].append(element);
+// });
+
+// const ps = document.querySelector("#p");
+// ps.removeChild();
+let data;
+const xhr = new XMLHttpRequest();
+xhr.open("get", "https://api.github.com/users/Sharjeelcode");
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4) {
+    const result = xhr.responseText;
+    data = JSON.parse(result);
+    console.log(data);
+  }
+};
+
+xhr.send();

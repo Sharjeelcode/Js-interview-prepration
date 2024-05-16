@@ -470,18 +470,18 @@ const arr = [1, 2, 3, 4, 5];
 // console.log(splice);
 // console.log(arr);
 
-const map = arr.map((arr) => {
-  if (arr > 2) {
-    return "hello";
-  }
-});
-const filter = arr.filter((arr) => arr > 2);
+// const map = arr.map((arr) => {
+//   if (arr > 2) {
+//     return "hello";
+//   }
+// });
+// const filter = arr.filter((arr) => arr > 2);
 // console.log(map);
-// console.log(filter);
+// // console.log(filter);
 
-const h1 = (document.getElementById("h1").innerHTML = "baby");
+// const h1 = (document.getElementById("h1").innerHTML = "baby");
 
-const p = document.querySelectorAll("p");
+// const p = document.querySelectorAll("p");
 // const pArray = Array.from(p);
 
 // const i = pArray.map((p) => {
@@ -513,15 +513,39 @@ const p = document.querySelectorAll("p");
 
 // const ps = document.querySelector("#p");
 // ps.removeChild();
-let data;
-const xhr = new XMLHttpRequest();
-xhr.open("get", "https://api.github.com/users/Sharjeelcode");
-xhr.onreadystatechange = function () {
-  if (xhr.readyState === 4) {
-    const result = xhr.responseText;
-    data = JSON.parse(result);
-    console.log(data);
-  }
-};
+// let data;
+// const xhr = new XMLHttpRequest();
+// xhr.open("get", "https://api.github.com/users/Sharjeelcode");
+// xhr.onreadystatechange = function () {
+//   if (xhr.readyState === 4) {
+//     const result = xhr.responseText;
+//     data = JSON.parse(result);
+//     console.log(data);
+//   }
+// };
 
-xhr.send();
+// xhr.send();
+
+// new Promise((resolve, reject) => {
+//   // setTimeout(() => resolve({ name: " herry" }), 1000);
+//   setTimeout(() => reject("rejected"), 2000);
+// })
+//   .then((user) => console.log(user))
+//   .catch((err) => console.log(err));
+
+// fetch("https://api.github.com/users/Sharjeelcode")
+//   .then((data) => console.log(data))
+//   .catch((err) => console.log(`im error ${err}`));
+
+// (async () => {
+//   try {
+//     const response = await fetch("https://api.github.com/users/Sharjeelcode");
+//     const data = await response.json();
+//     const imgs = document.getElementById("img");
+//     const img = data.avatar_url;
+//     imgs.setAttribute("src", img);
+//     console.log(data.avatar_url);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// })();

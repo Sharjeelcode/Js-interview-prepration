@@ -549,3 +549,23 @@ const arr = [1, 2, 3, 4, 5];
 //     console.log(error);
 //   }
 // })();
+
+function callBack(a, e) {
+  if (a) {
+    console.log("exicuted");
+    e();
+  }
+}
+function e() {
+  console.log("hello");
+}
+callBack("a", e);
+
+const user = (username, id, course) => {
+  this.username = username;
+  this.id = id;
+  this.course = course;
+  return this;
+};
+
+console.log(user("sharjeel", 1, "js"));

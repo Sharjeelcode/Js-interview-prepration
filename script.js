@@ -550,22 +550,43 @@ const arr = [1, 2, 3, 4, 5];
 //   }
 // })();
 
-function callBack(a, e) {
-  if (a) {
-    console.log("exicuted");
-    e();
+// function callBack(a, e) {
+//   if (a) {
+//     console.log("exicuted");
+//     e();
+//   }
+// }
+// function e() {
+//   console.log("hello");
+// }
+// callBack("a", e);
+
+// function user(username, id, course) {
+//   this.username = username;
+//   this.id = id;
+//   this.course = course;
+// }
+// user.username = "hello";
+
+// const userone = new user("sharjeel", 1, true);
+// const usertwo = new user("herry", 1, false);
+// console.log(userone);
+// console.log(usertwo);
+
+// console.log(this);
+
+class user {
+  constructor(user, password, email) {
+    this.user = user;
+    this.password = password;
+    this.email = email;
+  }
+
+  encreptPass() {
+    return `${this.password}abcd`;
   }
 }
-function e() {
-  console.log("hello");
-}
-callBack("a", e);
 
-const user = (username, id, course) => {
-  this.username = username;
-  this.id = id;
-  this.course = course;
-  return this;
-};
+const userData = new user("Sharjeel", 123, "Sharjeel@google.com");
 
-console.log(user("sharjeel", 1, "js"));
+console.log(userData.encreptPass());
